@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Designing the image section */
+
+.image {
+    max-width: 45vw;
+    position: relative;
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.600);
+    top: 35vh;
+    padding: 1.2rem 0;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Designing the content section */
+
+.content {
+    padding: 2rem;
+    max-width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content .text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.form {
+    width: 80%;
+    height: 15rem;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.800);
+    /* margin-top: 5rem; */
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.form p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input[type = "text"],input[type = "number"],input[type = "email"],input[type = "password"] {
+    margin-bottom: 0.3rem; 
+    padding: 0.3rem;
+    /* outline: 1px solid black; */
+    border-radius: 2px;
+}
+
+.submit button {
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: whitesmoke;
+    background-color: rgb(5, 123, 118);
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.submit button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 82, 78);
+}
+
+.submit a {
+    text-decoration: none;
+    color: red;
+}
